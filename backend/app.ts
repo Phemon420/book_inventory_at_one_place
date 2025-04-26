@@ -10,7 +10,7 @@ const PORT=process.env.PORT || 4000;
 const prisma = new PrismaClient();
 
 app.use(cors({
-    origin: 'http://localhost:5173', // your frontend URL
+    origin: process.env.FRONTEND_URL, // your frontend URL
     credentials: true
 }));
 app.use(cookieParser());

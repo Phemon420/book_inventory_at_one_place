@@ -4,7 +4,7 @@ import { getUserInfoFromToken } from "./token";
 
 // API function for login using Axios
 
-const Url : string = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const Url : string = import.meta.env.VITE_API_URL;
 
 export async function loginUser(data: LoginFormValues): Promise<LoginResponse> {
   //const response = await axios.post<LoginResponse>(Url+"/auth/login", data)

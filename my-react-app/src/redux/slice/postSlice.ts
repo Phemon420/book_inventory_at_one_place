@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const Url = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const Url = import.meta.env.VITE_API_URL;
 
 // Async thunk
 export const fetchPosts = createAsyncThunk(
