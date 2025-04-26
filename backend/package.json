@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx app.ts",
+    "server": "nodemon --exec tsx app.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "body-parser": "^2.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.16.0",
+    "node": "^22.15.0",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^22.15.2",
+    "prisma": "^6.6.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3"
+  }
+}
