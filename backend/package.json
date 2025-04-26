@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node dist/app.js",
     "server": "nodemon --exec tsx app.ts",
-    "build": "tsc"
+    "build": "npx prisma generate && tsc"
   },
   "author": "",
   "license": "ISC",
