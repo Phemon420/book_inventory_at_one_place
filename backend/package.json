@@ -5,10 +5,10 @@
   "main": "app.ts",
   "type": "module",
   "scripts": {
-    "start": "tsx app.ts",
+    "start": "node dist/app.js",
     "server": "nodemon --exec tsx app.ts",
-    "build": "npx prisma generate",
-    "build-prod": "npx prisma generate"
+    "build": "npx prisma generate && tsc",
+    "build-prod": "node build-script.js"
   },
   "author": "",
   "license": "ISC",
