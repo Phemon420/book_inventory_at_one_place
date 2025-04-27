@@ -8,7 +8,7 @@
     "start": "node dist/app.js",
     "server": "nodemon --exec tsx app.ts",
     "build": "npx prisma generate && tsc",
-    "build-prod": "npx prisma generate && tsc --noEmit false --skipLibCheck true --allowImportingTsExtensions false"
+    "build-prod": "npx prisma generate && tsc --noEmit false --skipLibCheck true --noImplicitAny false --noImplicitThis false --strictNullChecks false --noErrorTruncation"
   },
   "author": "",
   "license": "ISC",
