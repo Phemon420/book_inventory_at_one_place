@@ -1,9 +1,16 @@
-const fs = require('fs');
-const { execSync } = require('child_process');
+// build-script.js - ES Module version
+import fs from 'fs';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+// Get current directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Step 1: Read the current tsconfig.json
 console.log('Reading tsconfig.json...');
-const tsconfigPath = './tsconfig.json';
+const tsconfigPath = path.join(__dirname, 'tsconfig.json');
 const originalTsconfig = fs.readFileSync(tsconfigPath, 'utf8');
 const tsconfig = JSON.parse(originalTsconfig);
 
